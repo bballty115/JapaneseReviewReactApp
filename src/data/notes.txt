@@ -1,0 +1,8 @@
+Shoutout to this guy for showing me how to host this on github
+- https://www.youtube.com/watch?v=hn1IkJk24ow
+
+In case I forget:
+- Commit changes
+- run "npm run predeploy" to rebuild
+- run "npm run deploy" to deploy to pages
+- Changes will reflect after a bit

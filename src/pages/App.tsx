@@ -207,8 +207,8 @@ function App() {
         // Unpack items
         const prevCorrectItem =
             currentExerciseItems[prevSelectionInfo.correct_index];
-        const prevSelectedItem =
-            currentExerciseItems[prevSelectionInfo.selected_index];
+        // const prevSelectedItem =
+        //     currentExerciseItems[prevSelectionInfo.selected_index];
         // If card is of type jp / en
         if (prevCorrectItem['jp'] && prevCorrectItem['en']) {
             return (
@@ -668,13 +668,15 @@ function App() {
                         // If no exercise selected, prompt user to select one
                         exerciseStatus == ExerciseStatus.NoneSelected && (
                             <div className="no_exercise_started">
-                                <p>
-                                    No exercise started. Please select one from
-                                    the menu here
-                                    {
-                                        '(Todo: Put quick access here, or auto-open menu select)'
+                                <button
+                                    onClick={() =>
+                                        setCurrentPopupContainer(
+                                            PopupContainer.ExerciseOptions,
+                                        )
                                     }
-                                </p>
+                                >
+                                    Open Exercise Settings
+                                </button>
                             </div>
                         )
                     }

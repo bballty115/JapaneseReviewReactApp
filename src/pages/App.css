@@ -149,14 +149,16 @@ html {
     font-weight: bold;
 }
 
-.exercise_finished {
+.exercise_finished,
+.no_exercise_started {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-.exercise_finished button {
+.exercise_finished button,
+.no_exercise_started button {
     width: 150px;
     height: 50px;
 }
