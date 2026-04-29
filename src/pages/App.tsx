@@ -321,6 +321,9 @@ function App() {
                     );
         }
 
+        // Clear out previous selection
+        setPrevSelectionInfo(EMPTY_PREV_SELECT);
+
         // Generate first set of exercise items
         selectNewVocabWord(
             selectedDataSetItems,
