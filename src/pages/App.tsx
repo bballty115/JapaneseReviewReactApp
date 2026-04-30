@@ -66,11 +66,13 @@ type AppSettings = {
     vocabSideStart: string;
     selectableOptions: number;
     hideButtonTextUntilClickOrHover: boolean;
+    bagModeAddExtraOnWrong: boolean;
 };
 const DEFAULT_APP_SETTINGS = {
     bagModeCount: 2,
     vocabSideStart: 'en',
     selectableOptions: 4,
+    bagModeAddExtraOnWrong: false,
     hideButtonTextUntilClickOrHover: false,
 };
 
@@ -284,9 +286,6 @@ function App() {
      * Start an exercise given an exercise type
      */
     function startExercise(startedExerciseType: ExerciseType) {
-        // Set the exercise type
-        setExerciseType(startedExerciseType);
-
         // Load the selected exercise datasets
         let selectedDataSetItems: any = [];
         exerciseDatasetInfo.forEach((dataSetInfo: DataGroupId) => {
@@ -308,6 +307,16 @@ function App() {
                 return found;
             });
         });
+        /**
+         * If no dataset items are found (Either outdated or none selected, prompt user to select datasets) and clear current datasets
+         */
+        if (selectedDataSetItems.length == 0) {
+            setExerciseDatasetInfo([]);
+            alert('No datasets selected, please select from Exercise menu.');
+            return;
+        }
+        // Set the exercise type and items
+        setExerciseType(startedExerciseType);
         setCurrentExerciseItems(selectedDataSetItems);
         let remainingExerciseItemIndicesCopy: number[] = Array.from(
             selectedDataSetItems.keys(),
@@ -362,7 +371,10 @@ function App() {
                         return true;
                     });
             }
-            // If incorrect, keep in the bag
+            // If incorrect, add extra to bag if setting enabled
+            else if (appSettings.bagModeAddExtraOnWrong) {
+                newRemainingExerciseItemIndicies.push(selectedItemIndex);
+            }
         }
         // If infinite mode
         if (exerciseType == ExerciseType.InfiniteMode) {
@@ -404,6 +416,14 @@ function App() {
                         className="popup_subcontainer"
                         onClick={(e) => e.stopPropagation()}
                     >
+                        <button
+                            className="popup_close_btn"
+                            onClick={() =>
+                                setCurrentPopupContainer(PopupContainer.None)
+                            }
+                        >
+                            父
+                        </button>
                         {
                             /**
                              * Exercise Settings Container
@@ -619,6 +639,27 @@ function App() {
                                             <option value="en">English</option>
                                         </select>
                                         <br />
+                                        {/**
+                                         * Extra Word Bag Wrong
+                                         */}
+                                        <label>
+                                            Add Extra Word on Incorrect [Bag
+                                            Mode]:
+                                        </label>
+                                        <input
+                                            type="checkbox"
+                                            onChange={(val) => {
+                                                setAppSettings({
+                                                    ...appSettings,
+                                                    bagModeAddExtraOnWrong:
+                                                        val.target.checked,
+                                                });
+                                            }}
+                                            checked={
+                                                appSettings.bagModeAddExtraOnWrong
+                                            }
+                                        ></input>
+                                        <br />
                                     </form>
                                 </div>
                             )
@@ -648,12 +689,11 @@ function App() {
                     >
                         Settings
                     </button>
-                    <div className="cur_word">{getCurrentWordDisplay()}</div>
                     {/**
                      * Open exercise options
                      */}
                     <button
-                        className="exercise_options_btn"
+                        className="settings_btn"
                         onClick={() =>
                             setCurrentPopupContainer(
                                 PopupContainer.ExerciseOptions,
@@ -663,6 +703,12 @@ function App() {
                         Exercise
                     </button>
                 </div>
+                {/**
+                 * Current word
+                 */}
+
+                <div className="cur_word">{getCurrentWordDisplay()}</div>
+
                 {/**
                  * Word Select Panel
                  */}
@@ -688,10 +734,16 @@ function App() {
                         exerciseStatus == ExerciseStatus.Finished && (
                             <div className="exercise_finished">
                                 <button
-                                    onClick={() => startExercise(exerciseType)}
+                                    disabled={exerciseDatasetInfo.length == 0}
+                                    onClick={() => {
+                                        startExercise(exerciseType);
+                                    }}
                                 >
-                                    Restart Exercise
+                                    {exerciseDatasetInfo.length == 0
+                                        ? 'Select Lessons to Restart Exercise'
+                                        : 'Restart Exercise'}
                                 </button>
+
                                 <button
                                     onClick={() =>
                                         setCurrentPopupContainer(
@@ -771,18 +823,34 @@ function App() {
                                 {getCorrectSelectionTextElement()}
                             </div>
                         )}
-                    {exerciseType == ExerciseType.BagMode && (
-                        <p className="progress_count">
-                            Complete:{' '}
-                            {appSettings.bagModeCount *
-                                currentExerciseItems.length -
-                                remainingExerciseItemIndicies.length}{' '}
-                            of{' '}
-                            {appSettings.bagModeCount *
-                                currentExerciseItems.length}
-                            .
-                        </p>
-                    )}
+                    {exerciseType == ExerciseType.BagMode &&
+                        exerciseStatus == ExerciseStatus.Running && (
+                            <p className="progress_count">
+                                Complete:{' '}
+                                {appSettings.bagModeCount *
+                                    currentExerciseItems.length -
+                                    remainingExerciseItemIndicies.length >
+                                0
+                                    ? appSettings.bagModeCount *
+                                          currentExerciseItems.length -
+                                      remainingExerciseItemIndicies.length
+                                    : 0}{' '}
+                                of{' '}
+                                {appSettings.bagModeCount *
+                                    currentExerciseItems.length +
+                                    (appSettings.bagModeCount *
+                                        currentExerciseItems.length -
+                                        remainingExerciseItemIndicies.length <
+                                    0
+                                        ? -(
+                                              appSettings.bagModeCount *
+                                                  currentExerciseItems.length -
+                                              remainingExerciseItemIndicies.length
+                                          )
+                                        : 0)}
+                                .
+                            </p>
+                        )}
                 </div>
             </div>
         </>

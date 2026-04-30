@@ -4,26 +4,78 @@ html {
     padding: 0;
 }
 
+/**
+    DARK MODE STYLES
+    I WILL LEARN HOW
+    TO MAKE THIS LOOK
+    BETTER LATER / ADD
+    A BUTTON FOR THIS
+*/
 .app_container {
     position: relative;
 }
+
+button {
+    background-color: #424549;
+    color: #eeeeee;
+}
+
+.popup_subcontainer {
+    background-color: #444444;
+}
+
+.cur_word {
+    background-color: #36393e;
+    color: #eeeeee;
+    border-color: #444444;
+}
+
+.data_group_header,
+label {
+    color: #eeeeee;
+}
+
+button:disabled {
+    background-color: #5e5e5e;
+    color: #b4b4b4;
+}
+
+/*
+    END OF DARK MODE STYLES
+*/
 
 .app_main {
     position: absolute;
     z-index: 0;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: min-content min-content 20vh;
+    grid-template-rows: min-content min-content min-content min-content 20vh;
     width: 100vw;
     height: 100vh;
+    justify-items: center;
+    background-color: #36393e;
+}
+
+.cur_word {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    width: 200px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.app_line_break {
+    width: 200px;
 }
 
 .nav_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2vh;
-    margin-bottom: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 200px;
 }
 
 .nav_bar button {
@@ -37,7 +89,6 @@ html {
     justify-content: top;
     align-items: center;
     row-gap: 15px;
-    margin: 10px;
 }
 
 .item_select button {
@@ -45,6 +96,15 @@ html {
     height: 40px;
     white-space: normal;
     word-wrap: break-word;
+}
+
+.popup_close_btn {
+    position: fixed;
+    right: -10px;
+    top: -10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 1;
 }
 
 .progress_info_container {
@@ -61,13 +121,12 @@ html {
 }
 
 .progress_info_incorrect {
-    color: red;
+    color: #f7272e;
 }
 
 .popup_subcontainer {
     position: absolute;
     z-index: 10;
-    background-color: lightgray;
     width: 90vw;
     height: 90vh;
     border-radius: 20px;
@@ -136,7 +195,6 @@ html {
 
 .select_exercise_type_container {
     width: 100%;
-    height: 100px;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -147,6 +205,8 @@ html {
     width: 40%;
     height: 80%;
     font-weight: bold;
+    min-width: 5vw;
+    min-height: 10vh;
 }
 
 .exercise_finished,

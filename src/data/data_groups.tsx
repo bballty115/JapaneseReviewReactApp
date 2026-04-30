@@ -6,6 +6,7 @@ import lesson_2_bonus from './lessons/2/lesson_2_bonus';
 import lesson_3_vocab from './lessons/3/lesson_3_vocab';
 import lesson_4_vocab from './lessons/4/lesson_4_vocab';
 import kanji_one_to_rest from './kanji/n5/kanji_one_to_rest';
+import kanji_eye_to_small from './kanji/n5/kanji_eye_to_small';
 
 const dataGroups = [
     {
@@ -73,9 +74,14 @@ const dataGroups = [
         sectionId: 'kanji_n5',
         dataSets: [
             {
-                displayName: '"One" to "Rest" [31]',
-                dataSetId: 'vocab',
+                displayName: '"One" to "Rest" [30]',
+                dataSetId: 'n5_one_to_rest',
                 data: kanji_one_to_rest,
+            },
+            {
+                displayName: '"Eye" to "Small" [25]',
+                dataSetId: 'n5_eye_to_small',
+                data: kanji_eye_to_small,
             },
         ],
     },
