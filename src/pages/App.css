@@ -18,6 +18,7 @@ html {
 button {
     background-color: #424549;
     color: #eeeeee;
+    border-radius: auto;
 }
 
 .popup_subcontainer {
@@ -31,7 +32,8 @@ button {
 }
 
 .data_group_header,
-label {
+label,
+.progress_count {
     color: #eeeeee;
 }
 
