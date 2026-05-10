@@ -7,6 +7,7 @@ import lesson_3_vocab from './lessons/3/lesson_3_vocab';
 import lesson_4_vocab from './lessons/4/lesson_4_vocab';
 import kanji_one_to_rest from './kanji/n5/kanji_one_to_rest';
 import kanji_eye_to_small from './kanji/n5/kanji_eye_to_small';
+import kanji_big_to_left from './kanji/n5/kanji_big_to_left';
 
 const dataGroups = [
     {
@@ -82,6 +83,11 @@ const dataGroups = [
                 displayName: '"Eye" to "Small" [25]',
                 dataSetId: 'n5_eye_to_small',
                 data: kanji_eye_to_small,
+            },
+            {
+                displayName: '"Big" to "Left" [31]',
+                dataSetId: 'n5_big_to_left',
+                data: kanji_big_to_left,
             },
         ],
     },
