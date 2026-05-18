@@ -8,6 +8,7 @@ import lesson_4_vocab from './lessons/4/lesson_4_vocab';
 import kanji_one_to_rest from './kanji/n5/kanji_one_to_rest';
 import kanji_eye_to_small from './kanji/n5/kanji_eye_to_small';
 import kanji_big_to_left from './kanji/n5/kanji_big_to_left';
+import kanji_stand_to_tall from './kanji/n5/kanji_stand_to_tall';
 
 const dataGroups = [
     {
@@ -88,6 +89,11 @@ const dataGroups = [
                 displayName: '"Big" to "Left" [31]',
                 dataSetId: 'n5_big_to_left',
                 data: kanji_big_to_left,
+            },
+            {
+                displayName: '"Stand" to "Tall" [15]',
+                dataSetId: 'n5_stand_to_tall',
+                data: kanji_stand_to_tall,
             },
         ],
     },
