@@ -52,6 +52,10 @@ export default [
         en: 'spirit',
     },
     {
+        jp: '穴',
+        en: 'hole',
+    },
+    {
         jp: '空',
         en: 'sky',
     },

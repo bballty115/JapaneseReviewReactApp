@@ -91,7 +91,7 @@ const dataGroups = [
                 data: kanji_big_to_left,
             },
             {
-                displayName: '"Stand" to "Tall" [15]',
+                displayName: '"Stand" to "Tall" [16]',
                 dataSetId: 'n5_stand_to_tall',
                 data: kanji_stand_to_tall,
             },
