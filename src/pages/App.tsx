@@ -68,7 +68,7 @@ type AppSettings = {
     hideButtonTextUntilClickOrHover: boolean;
     bagModeAddExtraOnWrong: boolean;
 };
-const DEFAULT_APP_SETTINGS = {
+const DEFAULT_APP_SETTINGS: AppSettings = {
     bagModeCount: 2,
     vocabSideStart: 'en',
     selectableOptions: 4,
@@ -77,7 +77,7 @@ const DEFAULT_APP_SETTINGS = {
 };
 
 // Store / retrieve app settings in local storage
-function getAppSettings() {
+function getAppSettings(): AppSettings {
     let strData = localStorage.getItem('appSettings');
     if (strData === null) return DEFAULT_APP_SETTINGS;
     return JSON.parse(strData);

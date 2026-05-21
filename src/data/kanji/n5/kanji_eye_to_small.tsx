@@ -97,6 +97,6 @@ export default [
     },
     {
         jp: '小',
-        en: 'little',
+        en: 'small',
     },
 ];
