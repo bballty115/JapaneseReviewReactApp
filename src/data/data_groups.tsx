@@ -9,6 +9,7 @@ import kanji_one_to_rest from './kanji/n5/kanji_one_to_rest';
 import kanji_eye_to_small from './kanji/n5/kanji_eye_to_small';
 import kanji_big_to_left from './kanji/n5/kanji_big_to_left';
 import kanji_stand_to_tall from './kanji/n5/kanji_stand_to_tall';
+import kanji_what_to_long from './kanji/n5/kanji_what_to_long';
 
 const dataGroups = [
     {
@@ -94,6 +95,11 @@ const dataGroups = [
                 displayName: '"Stand" to "Tall" [16]',
                 dataSetId: 'n5_stand_to_tall',
                 data: kanji_stand_to_tall,
+            },
+            {
+                displayName: '"What" to "Long" [17]',
+                dataSetId: 'n5_what_to_long',
+                data: kanji_what_to_long,
             },
         ],
     },
