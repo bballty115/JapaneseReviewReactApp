@@ -5,11 +5,14 @@ import lesson_2_vocab from './lessons/2/lesson_2_vocab';
 import lesson_2_bonus from './lessons/2/lesson_2_bonus';
 import lesson_3_vocab from './lessons/3/lesson_3_vocab';
 import lesson_4_vocab from './lessons/4/lesson_4_vocab';
-import kanji_one_to_rest from './kanji/n5/kanji_one_to_rest';
-import kanji_eye_to_small from './kanji/n5/kanji_eye_to_small';
-import kanji_big_to_left from './kanji/n5/kanji_big_to_left';
-import kanji_stand_to_tall from './kanji/n5/kanji_stand_to_tall';
-import kanji_what_to_long from './kanji/n5/kanji_what_to_long';
+import kanji_one_to_rest from './kanji/n5/base/kanji_one_to_rest';
+import kanji_eye_to_small from './kanji/n5/base/kanji_eye_to_small';
+import kanji_big_to_left from './kanji/n5/base/kanji_big_to_left';
+import kanji_stand_to_tall from './kanji/n5/base/kanji_stand_to_tall';
+import kanji_what_to_long from './kanji/n5/base/kanji_what_to_long';
+import n5_vocab_easy from './kanji/n5/vocab/easy';
+import n5_vocab_medium from './kanji/n5/vocab/medium';
+import n5_vocab_hard from './kanji/n5/vocab/hard';
 
 const dataGroups = [
     {
@@ -100,6 +103,27 @@ const dataGroups = [
                 displayName: '"What" to "Long" [17]',
                 dataSetId: 'n5_what_to_long',
                 data: kanji_what_to_long,
+            },
+        ],
+    },
+    {
+        sectionDisplayName: 'N5 Kanji Vocab',
+        sectionId: 'kanji_vocab_n5',
+        dataSets: [
+            {
+                displayName: 'Vocab Easy [75]',
+                dataSetId: 'n5_vocab_easy',
+                data: n5_vocab_easy,
+            },
+            {
+                displayName: 'Vocab Medium [36]',
+                dataSetId: 'n5_vocab_medium',
+                data: n5_vocab_medium,
+            },
+            {
+                displayName: 'Vocab Hard [23]',
+                dataSetId: 'n5_vocab_hard',
+                data: n5_vocab_hard,
             },
         ],
     },
