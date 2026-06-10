@@ -157,7 +157,7 @@ export default [
     },
     {
         jp: '聞き',
-        en: 'hearing',
+        en: 'to listen (n)',
     },
     {
         jp: '聞く',
@@ -169,7 +169,7 @@ export default [
     },
     {
         jp: '読み',
-        en: 'reading',
+        en: 'to read (n)',
     },
     {
         jp: '日本語',

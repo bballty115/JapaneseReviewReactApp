@@ -13,7 +13,7 @@ export default [
     },
     {
         jp: '入り',
-        en: 'entering',
+        en: 'to enter (n)',
     },
     {
         jp: '入力',
@@ -45,7 +45,7 @@ export default [
     },
     {
         jp: '立ち',
-        en: 'depature; being consumed',
+        en: 'to depart (n); to be consumed (n)',
     },
     {
         jp: '立て',
@@ -53,11 +53,11 @@ export default [
     },
     {
         jp: '休み',
-        en: 'rest; vacation',
+        en: 'to rest (n); to vacation (n)',
     },
     {
         jp: '行き',
-        en: 'outbound; bound for ...',
+        en: 'to go (n); bound for ...',
     },
     {
         jp: 'その後',
@@ -77,7 +77,7 @@ export default [
     },
     {
         jp: '足し',
-        en: 'top up, supplement',
+        en: 'to add (n); to top up (n)',
     },
     {
         jp: '何とか',

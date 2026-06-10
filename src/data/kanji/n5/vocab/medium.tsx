@@ -81,7 +81,7 @@ export default [
     },
     {
         jp: '生き',
-        en: 'living',
+        en: 'to live (n)',
     },
     {
         jp: '田んぼ',
@@ -117,7 +117,7 @@ export default [
     },
     {
         jp: '売り',
-        en: 'sale, selling',
+        en: 'to sell (n)',
     },
     {
         jp: '赤ちゃん',
