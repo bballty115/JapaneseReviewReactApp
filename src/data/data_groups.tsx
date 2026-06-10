@@ -111,7 +111,7 @@ const dataGroups = [
         sectionId: 'kanji_vocab_n5',
         dataSets: [
             {
-                displayName: 'Vocab Easy [75]',
+                displayName: 'Vocab Easy [74]',
                 dataSetId: 'n5_vocab_easy',
                 data: n5_vocab_easy,
             },
