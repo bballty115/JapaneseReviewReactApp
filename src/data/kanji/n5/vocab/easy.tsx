@@ -284,10 +284,6 @@ export default [
         en: 'drizzle',
     },
     {
-        jp: '学校',
-        en: 'school',
-    },
-    {
         jp: '大学',
         en: 'college',
     },
