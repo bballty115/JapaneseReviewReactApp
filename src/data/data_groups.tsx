@@ -13,6 +13,7 @@ import kanji_what_to_long from './kanji/n5/base/kanji_what_to_long';
 import n5_vocab_easy from './kanji/n5/vocab/easy';
 import n5_vocab_medium from './kanji/n5/vocab/medium';
 import n5_vocab_hard from './kanji/n5/vocab/hard';
+import lesson_5_vocab from './lessons/5/lesson_5_vocab';
 
 const dataGroups = [
     {
@@ -72,6 +73,17 @@ const dataGroups = [
                 displayName: 'Vocab',
                 dataSetId: 'vocab',
                 data: lesson_4_vocab,
+            },
+        ],
+    },
+    {
+        sectionDisplayName: 'Lesson 5',
+        sectionId: 'lesson_5',
+        dataSets: [
+            {
+                displayName: 'Vocab',
+                dataSetId: 'vocab',
+                data: lesson_5_vocab,
             },
         ],
     },
