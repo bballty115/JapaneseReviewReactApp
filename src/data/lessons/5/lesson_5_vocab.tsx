@@ -200,8 +200,8 @@ export default [
         en: 'very',
     },
     {
-        jp: 'どんな',
-        en: 'what kind of',
+        jp: 'どんな...',
+        en: 'what kind of...',
     },
     {
         jp: 'まい',
