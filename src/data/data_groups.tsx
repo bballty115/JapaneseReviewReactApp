@@ -14,6 +14,7 @@ import n5_vocab_easy from './kanji/n5/vocab/easy';
 import n5_vocab_medium from './kanji/n5/vocab/medium';
 import n5_vocab_hard from './kanji/n5/vocab/hard';
 import lesson_5_vocab from './lessons/5/lesson_5_vocab';
+import kanji_capital_to_comment from './kanji/n4/base/kanji_capital_to_comment';
 
 const dataGroups = [
     {
@@ -136,6 +137,17 @@ const dataGroups = [
                 displayName: 'Vocab Hard [23]',
                 dataSetId: 'n5_vocab_hard',
                 data: n5_vocab_hard,
+            },
+        ],
+    },
+    {
+        sectionDisplayName: 'N4 Kanji',
+        sectionId: 'kanji_n4',
+        dataSets: [
+            {
+                displayName: '"Capital" to "Comment" [10]',
+                dataSetId: 'n5_capital_to_comment',
+                data: kanji_capital_to_comment,
             },
         ],
     },
