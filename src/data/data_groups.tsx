@@ -15,6 +15,7 @@ import n5_vocab_medium from './kanji/n5/vocab/medium';
 import n5_vocab_hard from './kanji/n5/vocab/hard';
 import lesson_5_vocab from './lessons/5/lesson_5_vocab';
 import kanji_capital_to_comment from './kanji/n4/base/kanji_capital_to_comment';
+import kanji_origin_to_join from './kanji/n4/base/kanji_origin_to_join';
 
 const dataGroups = [
     {
@@ -146,8 +147,14 @@ const dataGroups = [
         dataSets: [
             {
                 displayName: '"Capital" to "Comment" [10]',
-                dataSetId: 'n5_capital_to_comment',
+                dataSetId: 'n4_capital_to_comment',
                 data: kanji_capital_to_comment,
+            },
+
+            {
+                displayName: '"Origin" to "Join" [15]',
+                dataSetId: 'n4_origin_to_join',
+                data: kanji_origin_to_join,
             },
         ],
     },
