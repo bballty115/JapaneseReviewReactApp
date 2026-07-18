@@ -17,6 +17,7 @@ import lesson_5_vocab from './lessons/5/lesson_5_vocab';
 import kanji_capital_to_comment from './kanji/n4/base/kanji_capital_to_comment';
 import kanji_origin_to_join from './kanji/n4/base/kanji_origin_to_join';
 import kanji_same_to_thought from './kanji/n4/base/kanji_same_to_thought';
+import kanji_question_to_early from './kanji/n4/base/kanji_question_to_early';
 
 const dataGroups = [
     {
@@ -160,6 +161,11 @@ const dataGroups = [
                 displayName: '"Same" to "Thought" [9]',
                 dataSetId: 'n4_same_to_thought',
                 data: kanji_same_to_thought,
+            },
+            {
+                displayName: '"Question" to "Early" [20]',
+                dataSetId: 'n4_question_to_early',
+                data: kanji_question_to_early,
             },
         ],
     },
