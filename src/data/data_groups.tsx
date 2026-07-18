@@ -16,6 +16,7 @@ import n5_vocab_hard from './kanji/n5/vocab/hard';
 import lesson_5_vocab from './lessons/5/lesson_5_vocab';
 import kanji_capital_to_comment from './kanji/n4/base/kanji_capital_to_comment';
 import kanji_origin_to_join from './kanji/n4/base/kanji_origin_to_join';
+import kanji_same_to_thought from './kanji/n4/base/kanji_same_to_thought';
 
 const dataGroups = [
     {
@@ -150,11 +151,15 @@ const dataGroups = [
                 dataSetId: 'n4_capital_to_comment',
                 data: kanji_capital_to_comment,
             },
-
             {
                 displayName: '"Origin" to "Join" [15]',
                 dataSetId: 'n4_origin_to_join',
                 data: kanji_origin_to_join,
+            },
+            {
+                displayName: '"Same" to "Thought" [9]',
+                dataSetId: 'n4_same_to_thought',
+                data: kanji_same_to_thought,
             },
         ],
     },
