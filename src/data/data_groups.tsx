@@ -18,6 +18,7 @@ import kanji_capital_to_comment from './kanji/n4/base/kanji_capital_to_comment';
 import kanji_origin_to_join from './kanji/n4/base/kanji_origin_to_join';
 import kanji_same_to_thought from './kanji/n4/base/kanji_same_to_thought';
 import kanji_question_to_early from './kanji/n4/base/kanji_question_to_early';
+import kanji_wait_to_teach from './kanji/n4/base/kanji_wait_to_teach';
 
 const dataGroups = [
     {
@@ -166,6 +167,11 @@ const dataGroups = [
                 displayName: '"Question" to "Early" [20]',
                 dataSetId: 'n4_question_to_early',
                 data: kanji_question_to_early,
+            },
+            {
+                displayName: '"Wait" to "Teach" [23]',
+                dataSetId: 'n4_wait_to_teach',
+                data: kanji_wait_to_teach,
             },
         ],
     },

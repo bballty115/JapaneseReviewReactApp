@@ -5,7 +5,7 @@ export default [
     },
     {
         jp: '回',
-        en: 'round / counter for occurences',
+        en: 'cycle / round / counter for occurences',
     },
     {
         jp: '堂',

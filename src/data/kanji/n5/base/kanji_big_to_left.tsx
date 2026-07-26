@@ -33,7 +33,7 @@ export default [
     },
     {
         jp: '入',
-        en: 'enterance',
+        en: 'entrance',
     },
     {
         jp: '天',

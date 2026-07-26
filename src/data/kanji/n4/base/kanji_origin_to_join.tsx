@@ -57,6 +57,6 @@ export default [
     },
     {
         jp: '合',
-        en: 'join / meet',
+        en: 'meet / join',
     },
 ];
