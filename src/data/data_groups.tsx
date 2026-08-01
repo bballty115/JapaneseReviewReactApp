@@ -20,6 +20,7 @@ import kanji_same_to_thought from './kanji/n4/base/kanji_same_to_thought';
 import kanji_question_to_early from './kanji/n4/base/kanji_question_to_early';
 import kanji_wait_to_teach from './kanji/n4/base/kanji_wait_to_teach';
 import kanji_few_to_low from './kanji/n4/base/kanji_few_to_low';
+import lesson_6_vocab from './lessons/6/lesson_6_vocab';
 
 const dataGroups = [
     {
@@ -90,6 +91,17 @@ const dataGroups = [
                 displayName: 'Vocab',
                 dataSetId: 'vocab',
                 data: lesson_5_vocab,
+            },
+        ],
+    },
+    {
+        sectionDisplayName: 'Lesson 6',
+        sectionId: 'lesson_6',
+        dataSets: [
+            {
+                displayName: 'Vocab',
+                dataSetId: 'vocab',
+                data: lesson_6_vocab,
             },
         ],
     },
