@@ -22,6 +22,9 @@ import kanji_wait_to_teach from './kanji/n4/base/kanji_wait_to_teach';
 import kanji_few_to_low from './kanji/n4/base/kanji_few_to_low';
 import lesson_6_vocab from './lessons/6/lesson_6_vocab';
 import lesson_6_te from './lessons/6/lesson_6_te';
+import lesson_5_te from './lessons/5/lesson_5_te';
+import lesson_4_te from './lessons/4/lesson_4_te';
+import lesson_3_te from './lessons/3/lesson_3_te';
 
 const dataGroups = [
     {
@@ -71,6 +74,11 @@ const dataGroups = [
                 dataSetId: 'vocab',
                 data: lesson_3_vocab,
             },
+            {
+                displayName: 'Te Verbs',
+                dataSetId: 'te_verbs',
+                data: lesson_3_te,
+            },
         ],
     },
     {
@@ -82,6 +90,11 @@ const dataGroups = [
                 dataSetId: 'vocab',
                 data: lesson_4_vocab,
             },
+            {
+                displayName: 'Te Verbs',
+                dataSetId: 'te_verbs',
+                data: lesson_4_te,
+            },
         ],
     },
     {
@@ -92,6 +105,11 @@ const dataGroups = [
                 displayName: 'Vocab',
                 dataSetId: 'vocab',
                 data: lesson_5_vocab,
+            },
+            {
+                displayName: 'Te Verbs',
+                dataSetId: 'te_verbs',
+                data: lesson_5_te,
             },
         ],
     },
