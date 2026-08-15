@@ -1,98 +1,98 @@
 export default [
     {
-        jp: 'あそぶ・あそびます・あそんで',
+        jp: 'あそぶ・あそんで',
         en: 'to play; to spend time pleasantly',
     },
     {
-        jp: 'いそぐ・いそぎます・いそいで',
+        jp: 'いそぐ・いそいで',
         en: 'to hurry',
     },
     {
-        jp: 'かえす・かえします・かえして',
+        jp: 'かえす・かえして',
         en: 'to return (a thing)',
     },
     {
-        jp: 'けす・けします・けして',
+        jp: 'けす・けして',
         en: 'to turn off; to erase',
     },
     {
-        jp: 'しぬ・しにます・しんで',
+        jp: 'しぬ・しんで',
         en: 'to die',
     },
     {
-        jp: 'すわる・すわります・すわって',
+        jp: 'すわる・すわって',
         en: 'to sit down',
     },
     {
-        jp: 'たつ・たちます・たって',
+        jp: 'たつ・たって',
         en: 'to stand up',
     },
     {
-        jp: 'たばこをすう・たばこをすいます・たばこをすって',
+        jp: 'たばこをすう・たばこをすって',
         en: 'to smoke',
     },
     {
-        jp: 'つかう・つかいます・つかって',
+        jp: 'つかう・つかって',
         en: 'to use',
     },
     {
-        jp: 'てつだう・てつだいます・てつだって',
+        jp: 'てつだう・てつだって',
         en: 'to help',
     },
     {
-        jp: 'はいる・はいります・はいって',
+        jp: 'はいる・はいって',
         en: 'to enter',
     },
     {
-        jp: 'もつ・もちます・もって',
+        jp: 'もつ・もって',
         en: 'to carry; to hold',
     },
     {
-        jp: 'やすむ・やすみます・やすんで',
+        jp: 'やすむ・やすんで',
         en: 'to be absent (from...); to rest',
     },
     {
-        jp: 'あける・あけます・あけて',
+        jp: 'あける・あけて',
         en: 'to open (something)',
     },
     {
-        jp: 'しめる・しめます・しめて',
+        jp: 'しめる・しめて',
         en: 'to close (something)',
     },
     {
-        jp: 'おしえる・おしえます・おしえて',
+        jp: 'おしえる・おしえて',
         en: 'to teach; to instruct',
     },
     {
-        jp: 'わすれる・わすれます・わすれて',
+        jp: 'わすれる・わすれて',
         en: 'to forget; to leave behind',
     },
     {
-        jp: 'おりる・おります・おりて',
+        jp: 'おりるす・おりて',
         en: 'to get off',
     },
     {
-        jp: 'かりる・かります・かりて',
+        jp: 'かりる・かりて',
         en: 'to borrow',
     },
     {
-        jp: 'シャワーをあびる・シャワーをあびます・シャワーをあびて',
+        jp: 'シャワーをあびる・シャワーをあびて',
         en: 'to take a shower',
     },
     {
-        jp: 'つける・つけます・つけて',
+        jp: 'つける・つけて',
         en: 'to turn on',
     },
     {
-        jp: 'でんわする・でんわします・でんわして',
+        jp: 'でんわする・でんわして',
         en: 'to call',
     },
     {
-        jp: 'つれてくる・つれてきます・つれてきて',
+        jp: 'つれてくる・つれてきて',
         en: 'to bring (a person)',
     },
     {
-        jp: 'もってくる・もってきます・もってきて',
+        jp: 'もってくる・もってきて',
         en: 'to bring (a thing)',
     },
 ];
