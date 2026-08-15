@@ -21,6 +21,7 @@ import kanji_question_to_early from './kanji/n4/base/kanji_question_to_early';
 import kanji_wait_to_teach from './kanji/n4/base/kanji_wait_to_teach';
 import kanji_few_to_low from './kanji/n4/base/kanji_few_to_low';
 import lesson_6_vocab from './lessons/6/lesson_6_vocab';
+import lesson_6_te from './lessons/6/lesson_6_te';
 
 const dataGroups = [
     {
@@ -102,6 +103,11 @@ const dataGroups = [
                 displayName: 'Vocab',
                 dataSetId: 'vocab',
                 data: lesson_6_vocab,
+            },
+            {
+                displayName: 'Te Verbs',
+                dataSetId: 'te_verbs',
+                data: lesson_6_te,
             },
         ],
     },
