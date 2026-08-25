@@ -68,7 +68,7 @@ export default [
         en: 'to forget; to leave behind',
     },
     {
-        jp: 'おりるす・おりて',
+        jp: 'おりる・おりて',
         en: 'to get off',
     },
     {
