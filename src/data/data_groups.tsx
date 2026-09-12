@@ -25,6 +25,7 @@ import lesson_6_te from './lessons/6/lesson_6_te';
 import lesson_5_te from './lessons/5/lesson_5_te';
 import lesson_4_te from './lessons/4/lesson_4_te';
 import lesson_3_te from './lessons/3/lesson_3_te';
+import kanji_answer_to_topic from './kanji/n4/base/kanji_answer_to_topic';
 
 const dataGroups = [
     {
@@ -214,6 +215,11 @@ const dataGroups = [
                 displayName: '"Few" to "Low" [21]',
                 dataSetId: 'n4_few_to_low',
                 data: kanji_few_to_low,
+            },
+            {
+                displayName: '"Answer" to "Topic" [18]',
+                dataSetId: 'n4_answer_to_topic',
+                data: kanji_answer_to_topic,
             },
         ],
     },
