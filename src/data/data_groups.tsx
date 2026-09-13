@@ -26,6 +26,7 @@ import lesson_5_te from './lessons/5/lesson_5_te';
 import lesson_4_te from './lessons/4/lesson_4_te';
 import lesson_3_te from './lessons/3/lesson_3_te';
 import kanji_answer_to_topic from './kanji/n4/base/kanji_answer_to_topic';
+import kanji_building_to_short from './kanji/n4/base/kanji_building_to_short';
 
 const dataGroups = [
     {
@@ -220,6 +221,11 @@ const dataGroups = [
                 displayName: '"Answer" to "Topic" [18]',
                 dataSetId: 'n4_answer_to_topic',
                 data: kanji_answer_to_topic,
+            },
+            {
+                displayName: '"Building" to "Short" [17]',
+                dataSetId: 'n4_building_to_short',
+                data: kanji_building_to_short,
             },
         ],
     },
