@@ -27,6 +27,7 @@ import lesson_4_te from './lessons/4/lesson_4_te';
 import lesson_3_te from './lessons/3/lesson_3_te';
 import kanji_answer_to_topic from './kanji/n4/base/kanji_answer_to_topic';
 import kanji_building_to_short from './kanji/n4/base/kanji_building_to_short';
+import kanji_separate_to_world from './kanji/n4/base/kanji_separate_to_world';
 
 const dataGroups = [
     {
@@ -226,6 +227,11 @@ const dataGroups = [
                 displayName: '"Building" to "Short" [17]',
                 dataSetId: 'n4_building_to_short',
                 data: kanji_building_to_short,
+            },
+            {
+                displayName: '"Separate" to "World" [17]',
+                dataSetId: 'n4_separate_to_world',
+                data: kanji_separate_to_world,
             },
         ],
     },
