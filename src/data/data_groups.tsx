@@ -28,6 +28,7 @@ import lesson_3_te from './lessons/3/lesson_3_te';
 import kanji_answer_to_topic from './kanji/n4/base/kanji_answer_to_topic';
 import kanji_building_to_short from './kanji/n4/base/kanji_building_to_short';
 import kanji_separate_to_world from './kanji/n4/base/kanji_separate_to_world';
+import lesson_7_vocab_1 from './lessons/6/lesson_7_vocab_1';
 
 const dataGroups = [
     {
@@ -129,6 +130,17 @@ const dataGroups = [
                 displayName: 'Te Verbs',
                 dataSetId: 'te_verbs',
                 data: lesson_6_te,
+            },
+        ],
+    },
+    {
+        sectionDisplayName: 'Lesson 7',
+        sectionId: 'lesson_7',
+        dataSets: [
+            {
+                displayName: 'Vocab Set 1 [15]',
+                dataSetId: 'vocab1',
+                data: lesson_7_vocab_1,
             },
         ],
     },
