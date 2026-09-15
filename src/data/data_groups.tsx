@@ -28,7 +28,8 @@ import lesson_3_te from './lessons/3/lesson_3_te';
 import kanji_answer_to_topic from './kanji/n4/base/kanji_answer_to_topic';
 import kanji_building_to_short from './kanji/n4/base/kanji_building_to_short';
 import kanji_separate_to_world from './kanji/n4/base/kanji_separate_to_world';
-import lesson_7_vocab_1 from './lessons/6/lesson_7_vocab_1';
+import lesson_7_vocab_1 from './lessons/7/lesson_7_vocab_1';
+import lesson_7_vocab_2 from './lessons/7/lesson_7_vocab_2';
 
 const dataGroups = [
     {
@@ -141,6 +142,11 @@ const dataGroups = [
                 displayName: 'Vocab Set 1 [15]',
                 dataSetId: 'vocab1',
                 data: lesson_7_vocab_1,
+            },
+            {
+                displayName: 'Vocab Set 2 [16]',
+                dataSetId: 'vocab2',
+                data: lesson_7_vocab_2,
             },
         ],
     },
