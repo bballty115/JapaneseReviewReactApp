@@ -150,7 +150,7 @@ const dataGroups = [
                 data: lesson_7_vocab_2,
             },
             {
-                displayName: 'Vocab Set 3 [13]',
+                displayName: 'Vocab Set 3 [12]',
                 dataSetId: 'vocab3',
                 data: lesson_7_vocab_3,
             },
