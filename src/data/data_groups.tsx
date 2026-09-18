@@ -31,6 +31,7 @@ import kanji_separate_to_world from './kanji/n4/base/kanji_separate_to_world';
 import lesson_7_vocab_1 from './lessons/7/lesson_7_vocab_1';
 import lesson_7_vocab_2 from './lessons/7/lesson_7_vocab_2';
 import lesson_7_vocab_3 from './lessons/7/lesson_7_vocab_3';
+import lesson_7_vocab_4 from './lessons/7/lesson_7_vocab_4';
 
 const dataGroups = [
     {
@@ -153,6 +154,11 @@ const dataGroups = [
                 displayName: 'Vocab Set 3 [12]',
                 dataSetId: 'vocab3',
                 data: lesson_7_vocab_3,
+            },
+            {
+                displayName: 'Vocab Set 4 [13]',
+                dataSetId: 'vocab4',
+                data: lesson_7_vocab_4,
             },
         ],
     },
