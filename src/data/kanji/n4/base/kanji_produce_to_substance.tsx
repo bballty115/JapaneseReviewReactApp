@@ -1,7 +1,7 @@
 export default [
  {
    "jp": "産",
-   "en": "life"
+   "en": "produce"
  },
  {
    "jp": "県",
