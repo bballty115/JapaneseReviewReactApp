@@ -20,6 +20,7 @@ import kanji_same_to_thought from './kanji/n4/base/kanji_same_to_thought';
 import kanji_question_to_early from './kanji/n4/base/kanji_question_to_early';
 import kanji_wait_to_teach from './kanji/n4/base/kanji_wait_to_teach';
 import kanji_few_to_low from './kanji/n4/base/kanji_few_to_low';
+import kanji_life_to_substance from './kanji/n4/base/kanji_life_to_substance'
 import lesson_6_vocab from './lessons/6/lesson_6_vocab';
 import lesson_6_te from './lessons/6/lesson_6_te';
 import lesson_5_te from './lessons/5/lesson_5_te';
@@ -261,6 +262,11 @@ const dataGroups = [
             {
                 displayName: '"Separate" to "World" [17]',
                 dataSetId: 'n4_separate_to_world',
+                data: kanji_separate_to_world,
+            },
+            {
+                displayName: '"Life" to "Substance" [20]',
+                dataSetId: 'n4_life_to_substance',
                 data: kanji_separate_to_world,
             },
         ],
