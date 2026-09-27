@@ -267,7 +267,7 @@ const dataGroups = [
             {
                 displayName: '"Life" to "Substance" [20]',
                 dataSetId: 'n4_life_to_substance',
-                data: kanji_separate_to_world,
+                data: kanji_life_to_substance,
             },
         ],
     },
