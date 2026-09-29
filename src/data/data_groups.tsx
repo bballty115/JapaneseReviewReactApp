@@ -33,6 +33,7 @@ import lesson_7_vocab_1 from './lessons/7/lesson_7_vocab_1';
 import lesson_7_vocab_2 from './lessons/7/lesson_7_vocab_2';
 import lesson_7_vocab_3 from './lessons/7/lesson_7_vocab_3';
 import lesson_7_vocab_4 from './lessons/7/lesson_7_vocab_4';
+import kanji_horse_to_weekday from './kanji/n4/base/kanji_horse_to_weekday';
 
 const dataGroups = [
     {
@@ -268,6 +269,11 @@ const dataGroups = [
                 displayName: '"Produce" to "Substance" [20]',
                 dataSetId: 'n4_produce_to_substance',
                 data: kanji_produce_to_substance,
+            },
+            {
+                displayName: '"Horse" to "Weekday" [16]',
+                dataSetId: 'n4_horse_to_weekday',
+                data: kanji_horse_to_weekday,
             },
         ],
     },
