@@ -34,6 +34,7 @@ import lesson_7_vocab_2 from './lessons/7/lesson_7_vocab_2';
 import lesson_7_vocab_3 from './lessons/7/lesson_7_vocab_3';
 import lesson_7_vocab_4 from './lessons/7/lesson_7_vocab_4';
 import kanji_horse_to_weekday from './kanji/n4/base/kanji_horse_to_weekday';
+import kanji_color_to_song from './kanji/n4/base/kanji_color_to_song';
 
 const dataGroups = [
     {
@@ -274,6 +275,11 @@ const dataGroups = [
                 displayName: '"Horse" to "Weekday" [16]',
                 dataSetId: 'n4_horse_to_weekday',
                 data: kanji_horse_to_weekday,
+            },
+            {
+                displayName: '"Color" to "Song" [18]',
+                dataSetId: 'n4_color_to_song',
+                data: kanji_color_to_song,
             },
         ],
     },
