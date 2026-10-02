@@ -35,6 +35,7 @@ import lesson_7_vocab_3 from './lessons/7/lesson_7_vocab_3';
 import lesson_7_vocab_4 from './lessons/7/lesson_7_vocab_4';
 import kanji_horse_to_weekday from './kanji/n4/base/kanji_horse_to_weekday';
 import kanji_color_to_song from './kanji/n4/base/kanji_color_to_song';
+import lesson_8_vocab_1 from './lessons/8/lesson_8_vocab_1';
 
 const dataGroups = [
     {
@@ -164,6 +165,17 @@ const dataGroups = [
                 data: lesson_7_vocab_4,
             },
         ],
+    },
+    {
+        sectionDisplayName: 'Lesson 8',
+        sectionId: 'lesson_8',
+        dataSets: [
+            {
+                displayName: 'Vocab Set 1 [15]',
+                dataSetId: 'vocab1',
+                data: lesson_8_vocab_1,
+            },
+        ]
     },
     {
         sectionDisplayName: 'N5 Kanji',
