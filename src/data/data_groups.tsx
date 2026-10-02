@@ -36,6 +36,8 @@ import lesson_7_vocab_4 from './lessons/7/lesson_7_vocab_4';
 import kanji_horse_to_weekday from './kanji/n4/base/kanji_horse_to_weekday';
 import kanji_color_to_song from './kanji/n4/base/kanji_color_to_song';
 import lesson_8_vocab_1 from './lessons/8/lesson_8_vocab_1';
+import lesson_8_vocab_2 from './lessons/8/lesson_8_vocab_2';
+import lesson_8_vocab_3 from './lessons/8/lesson_8_vocab_3';
 
 const dataGroups = [
     {
@@ -174,6 +176,16 @@ const dataGroups = [
                 displayName: 'Vocab Set 1 [15]',
                 dataSetId: 'vocab1',
                 data: lesson_8_vocab_1,
+            },
+            {
+                displayName: 'Vocab Set 2 [21]',
+                dataSetId: 'vocab2',
+                data: lesson_8_vocab_2,
+            },
+            {
+                displayName: 'Vocab Set 3 [20]',
+                dataSetId: 'vocab3',
+                data: lesson_8_vocab_3,
             },
         ]
     },
