@@ -44,7 +44,7 @@ export default [
         en: 'cucumber',
     },
     {
-        jp: 'きゃべつ',
+        jp: 'キャベツ',
         en: 'cabbage',
     },
     {
