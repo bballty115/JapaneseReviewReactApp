@@ -38,6 +38,13 @@ import kanji_color_to_song from './kanji/n4/base/kanji_color_to_song';
 import lesson_8_vocab_1 from './lessons/8/lesson_8_vocab_1';
 import lesson_8_vocab_2 from './lessons/8/lesson_8_vocab_2';
 import lesson_8_vocab_3 from './lessons/8/lesson_8_vocab_3';
+import lesson_8_phrases from './lessons/8/lesson_8_phrases';
+import lesson_8_extra_vocab from './lessons/8/lesson_8_extra_vocab';
+import lesson_9_vocab_1 from './lessons/9/lesson_9_vocab_1';
+import lesson_9_vocab_2 from './lessons/9/lesson_9_vocab_2';
+import lesson_9_vocab_3 from './lessons/9/lesson_9_vocab_3';
+import lesson_9_vocab_4 from './lessons/9/lesson_9_vocab_4';
+import lesson_9_vocab_extra from './lessons/9/lesson_9_vocab_extra';
 
 const dataGroups = [
     {
@@ -186,6 +193,47 @@ const dataGroups = [
                 displayName: 'Vocab Set 3 [20]',
                 dataSetId: 'vocab3',
                 data: lesson_8_vocab_3,
+            },
+            {
+                displayName: 'Useful Phrases [5]',
+                dataSetId: 'phrases',
+                data: lesson_8_phrases,
+            },
+            {
+                displayName: 'Extra Vocab: Food [15]',
+                dataSetId: 'vocab_extra',
+                data: lesson_8_extra_vocab
+            },
+        ]
+    },
+    {
+        sectionDisplayName: 'Lesson 9',
+        sectionId: 'lesson_9',
+        dataSets: [
+            {
+                displayName: 'Vocab Set 1 [13]',
+                dataSetId: 'vocab1',
+                data: lesson_9_vocab_1,
+            },
+            {
+                displayName: 'Vocab Set 2 [14]',
+                dataSetId: 'vocab2',
+                data: lesson_9_vocab_2,
+            },
+            {
+                displayName: 'Vocab Set 3 [11]',
+                dataSetId: 'vocab3',
+                data: lesson_9_vocab_3,
+            },
+            {
+                displayName: 'Vocab Set 4 [17]',
+                dataSetId: 'vocab4',
+                data: lesson_9_vocab_4,
+            },
+            {
+                displayName: 'Extra Vocab: Colors [14]',
+                dataSetId: 'extra',
+                data: lesson_9_vocab_extra,
             },
         ]
     },
